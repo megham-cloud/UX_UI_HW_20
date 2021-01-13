@@ -1,0 +1,134 @@
+/* Imported Catamaran and Open Sans Font Families*/
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+.onePage {
+    display: flex;
+}
+.sideBar {
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    border-right: 1px solid black;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.sideBar img {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.sideBar ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+.sideBar li {
+    margin-bottom: 50px;
+    margin-left: 25px;
+}
+
+.sideBar li:hover {
+    border-left: #F2BD1D 5px solid;
+    padding-left: 10px;
+    background-color: #f2bd1d56;
+}
+
+.sideBar ul li a {
+    text-decoration: none;
+    font: normal normal 800 24px/39px Catamaran;
+    color: #000000;
+}
+
+.aboutMe {
+    background-image: url("/UX_UI_HW_17/images/HeroBackgroundImg.jpg");
+    color:white;
+}
+
+.professionalMe {
+    display: flex;
+}
+
+.professionalMe h1 {
+    padding-left: 30px;
+}
+
+.professionalMe p {
+    width: 600px;
+    margin-left: 60px;
+    line-height: 50px;
+}
+
+.professionalImg {
+    width: 200px;
+    margin-top: 50px;
+}
+
+.casualMe {
+    margin-left: 60px;
+    line-height: 50px;
+}
+
+button {
+    border-radius: 41px;
+    height: 90px;
+    width: 380px;
+    text-align: center;
+    font-family: 'Catamaran', sans-serif; 
+    font-size: 26px;
+    color: white;
+    background-image: linear-gradient(90deg, #E10595 0%, #F0BB1C 100%);
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer ul {
+    list-style-type: none;
+}
+footer ul li {
+    display: inline;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+/* .navigation {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+
+nav {
+    width: 73%;
+    padding: 1%;
+}
+
+ul {
+    width: 50%;
+    margin-left: auto;
+} */
+
+
+/* FOR REFERENCE ************************************************* 
+font-family: 'Catamaran', sans-serif; 
+font-family: 'Open Sans', sans-serif;
+*/
