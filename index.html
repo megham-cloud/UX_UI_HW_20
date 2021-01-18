@@ -4,101 +4,139 @@
 <head>
     <title>Megha Mahapatra - UX/UI Designer</title>
     <script src="https://kit.fontawesome.com/27a2d694d4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/UX_UI_HW_17/css/styles.css">
+    <link rel="stylesheet" href="/UX_UI_HW_18/css/styles.css">
 </head>
 
 <body>
-    <div class="onePage">
-        <!-- Sidebar navigation -->
-        <div class="sideBar">
-            <img src="images/Personal Logo@2x.jpg"
-                alt="My personal logo (a capital M with a smaller heart shaped m on top)">
-
-            <ul>
-                <!-- Will have to change this once I get the other sections of the page running!!!!!!!!! -->
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-
-        <div class="aboutMe">
-            <div class="professionalMe">
-                <div class="professionalText">
-                    <h1>About Me</h1>
-                    <p>I am Megha Mahapatra, a budding mathematician turned UX/UI designer. I was drawn to mathematics for
-                        the logical and analytical problems it presented, but I found my calling in UX/UI design since it
-                        allows me to get creative while also solving problems analytically. </p>
-                    <p>I absolutely enjoy stepping into the shoes of users in order to explore their world of thinking. I
-                        also love the design thinking process for its encouragement of frequently testing solutions and
-                        learning from our failures to produce even better designs backed in evidence.</p>
-                    <p>My skills include executing the design thinking process by using tool such as Miro, Figma, Adobe XD,
-                        and inVision.</p>
-                </div>
-
-                <div class="professionalImg">
-                    <img src="images/ProMe.jpg" alt="A professional headshot of me">
-
-                    <button>View Resume</button>
-                </div>
-            </div>
-
-            <div class="casualMe">
-                <p>When I am not working on UX design, you can catch me gawking at the stars while strolling around the
-                    neighborhood in the early evening. I also spend countless hours reading fantasy novels (I am
-                    currently losing my mind over Brandon Sanderson's novels and I love it), and practicing the
-                    keyboard.
-                </p>
-            </div>
-        </div>
+    <!-- Sidebar navigation -->
+    <div class="sidenav">
+        <img src="images/Logo/Dark_Personal Logo – 1.png" alt="My personal logo">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#myWork">Work</a></li>
+            <li><a href="#mySkills">Skills</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </div>
 
-    <footer>
+
+    <!-- Main Content -->
+    <div class="main">
+        <!-- Hero Space with quick info about me -->
+        <div class="herospace" id="about">
+            <h1>Nice to meet you, I'm Megha!<img src="/UX_UI_HW_18/images/TransparentMe.png" alt="Image of me smiling">
+            </h1>
+            <p>A UX designer obsessed with creating user friendly designs where logic and creativity meet. Always
+                looking to
+                step into another user's shoes.</p>
+        </div>
+
+        <!-- My Work Section -->
+        <section class="myWork" id="myWork">
+            <h1>My Work</h1>
+            <!-- My Work Section Constructed using CSS Grid -->
+            <!-- I didn't quite use the CSS grid in the way that the directions wanted though... -->
+            <div class="workGrid">
+                <!-- The Informed Traveler Card -->
+                <div class="card" id="ift">
+                    <h2>Mobile App Design: The Informed Traveler</h2>
+                    <div class="floatContainer">
+                        <div class="description">
+                            <p>A survey I conducted showed that 41.2% of travelers are dissatisfied with expensive
+                                tourist traps. I knew I had to design an app to fix this problem when competitor
+                                analysis showed that other apps were not scratching this itch.</p>
+                            <button id="yellowFellow">See Case Study</button>
+                        </div>
+                        <img src="/UX_UI_HW_18/images/IFT/Framed Sign In.png" alt="The Informed Traveler Splash Screen">
+                    </div>
+                </div>
+
+                <!-- Edubeat Card -->
+                <div class="card" id="eb">
+                    <h2>Mobile App Design: Edubeat</h2>
+                    <div class="floatContainer">
+                        <div class="description">
+                            <p>Creating music to study can be a daunting task to do alone, according to 81% of students
+                                surveyed. Some fellow designers and I took matters into our own hands and designed a
+                                song
+                                making
+                                studying tool.</p>
+                            <button id="prettyPink">See Case Study</button>
+                        </div>
+                        <img src="/UX_UI_HW_18/images/EB/Splash Screen.png" alt="Edubeat Splash Screen">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- My Skills Section -->
+        <section class="mySkills" id="mySkills">
+            <h1>My Skills</h1>
+            <!--  My UX Skills section coded using CSS flex -->
+            <div class="flexContainer">
+                <div class="skillCard">
+                    <img src="/UX_UI_HW_18/images/Circle/Circle_Per.png" alt="User Persona">
+                    <h3>User Research</h3>
+                    <p>I utilize user research in order to understand the users, what makes them tick, and what they
+                        enjoy.
+                        Ultimately, after conducting user interviews and surveys and analyzing the results through means
+                        such as affinity diagrams, I create a user persona to really empathize with the users and start
+                        to
+                        define our problem.</p>
+                </div>
+                <div class="skillCard">
+                    <img src="/UX_UI_HW_18/images/Circle/Circle_Style.png" alt="Style Guide">
+                    <h3>User Interface Design</h3>
+                    <p>I use my knowledge of color theory and other laws like Gestalt's principles to determine a design
+                        that not only looks visually pleasing, but has real intent and meaning behind the visual
+                        direction
+                        taken. I develop and use a style guide or enhance a preexisting one to determine the look of
+                        every
+                        design project.</p>
+                </div>
+                <div class="skillCard">
+                    <img src="/UX_UI_HW_18/images/Circle/Circle_Code.png" alt="User Persona">
+                    <h3>Web Development</h3>
+                    <p>Through my knowledge of HTML, CSS, JavaScript, Jquery, and Bootstrap, I can not only work on the
+                        front-end development of websites (like this very website), but I can also understand and
+                        communicate with developers who I need to work with when I am taking a UX/UI designer role.</p>
+                </div>
+            </div>
+            <div class="extraFlex">
+                <div class="personal">
+                    <h3>A Little More About Me</h3>
+                    <p>When I am not sharpening my skills, you can catch me gawking at the stars while strolling around
+                        the
+                        neighborhood in the early evening. I spend countless hours reading fantasy novels (I am
+                        currently
+                        losing
+                        my mind over Brandon Sanderson's novels, and I love it), and practicing the keyboard.
+                    </p>
+                </div>
+                <div class="tools">
+                    <h3>Tools I Know</h3>
+                    <ul>
+                        <li>Miro</li>
+                        <li>Figma</li>
+                        <li>inVision</li>
+                        <li>Adobe XD</li>
+                        <li>Google Drive</li>
+                    </ul>
+                    <button id="resume">View Resume</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- <footer>
         <ul>
             <li><a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="https://github.io"><i class="fab fa-github-square"></i></a></li>
         </ul>
-    </footer>
+    </footer> -->
 
-
-
-    <!-- <header class="navigation">
-            <div class="inline-block logo">
-                <img src="images/Personal Logo@2x.jpg">
-            </div>
-            <nav class="inline-block">
-                <ul>
-                    <li class="inline-block">About</li>
-                    <li class="inline-block">Skills</li>
-                    <li class="inline-block">Work</li>
-                    <li class="inline-block">Contact</li>
-                </ul>
-            </nav>
-        </header>
-
-        <section class="heroImg">
-            <img src="images/HeroBackgroundImg.jpg">
-            <p>I am Megha Mahapatra, a budding mathematician turned UX/UI designer. I was drawn to mathematics for the logical and analytical problems it presented, but I found my calling in UX/UI design since it allows me to get creative while also solving problems analytically. 
-
-                I absolutely enjoy stepping into the shoes of users in order to explore their world of thinking. I also love the design thinking process for its encouragement of frequently testing solutions and learning from our failures to produce even better designs backed in evidence.
-                
-                My skills include executing the design thinking process by using tool such as Miro, Figma, Adobe XD, and inVision.
-
-                When I am not working on UX design, you can catch me gawking at the stars while strolling around the neighborhood in the early evening. I also spend countless hours reading fantasy novels (I am currently losing my mind over Brandon Sanderson's novels and I love it), and practicing the keyboard.
-            </p>
-            <button></button>
-        </section>
-
-        <footer>
-            <ul>
-                <li class="inline-block">About</li>
-                <li class="inline-block">Skills</li>
-                <li class="inline-block">Work</li>
-                <li class="inline-block">Contact</li>
-            </ul>
-        </footer> -->
 </body>
-
 
 </html>

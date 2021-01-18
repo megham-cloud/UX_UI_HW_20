@@ -2,23 +2,231 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
-.onePage {
+h1 {
+    font-family: 'Catamaran', sans-serif; 
+}
+
+/* sidenav styling */
+.sidenav {
+    width: 15%;
+    height: 100%;
+    background-color:black;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sidenav img {
+    text-align: center;
+    margin: 150px auto 52px auto;
+}
+
+.sidenav ul li {
+    list-style-type: none;
+    margin-bottom: 52px;
+}
+
+.sidenav ul a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sidenav a:hover {
+    color: cornsilk;
+}
+
+.main {
+    margin-left: 15%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Hero space styling */
+.herospace {
+    height: 60vh;
+    padding-top: 140px;
+    padding-left: 10%;
+    display: block;
+}
+
+.herospace p {
+    width: 34%;
+    font-size: 24px;
+}
+
+.herospace img {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    margin-right: 10%;
+    transform: scale(0.7, 0.7);
+}
+
+/* My Work Styling */
+.myWork {
+    background-color: #FAFAFA;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.myWork h1 {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.workGrid {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.card {
+    height: 50vh;
+}
+
+.card h2 {
+    margin-left: 60px;
+    margin-top: 36px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.floatContainer {
     display: flex;
 }
-.sideBar {
-    width: 300px;
-    height: 100%;
-    background-color: white;
-    border-right: 1px solid black;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 50px;
+
+.description {
+    width: 40%;
+    margin-left: 7%;
+}
+
+.card p {
+    margin-bottom: 30px;
+}
+
+.card img {
+    width: 42%;
+    transform: scale(0.3, 0.3);
+}
+
+#ift {
+    background-color: #FFFEEA;
+    border: 3px solid #F2BD1D;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+#yellowFellow {
+    width: 200px;
+    height: 60px;
+    background-color: #FDF8A3;
+    border: 2px solid #F2BD1D;
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+#eb {
+    background-color: #FFE7ED;
+    border: 3px solid #9E0067;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+#prettyPink {
+    width: 200px;
+    height: 60px;
+    background-color: #FF92B0;
+    border: 2px solid #9E0067;
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+/* My Skills styling */
+.mySkills {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.mySkills h1 {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.flexContainer {
+    display: flex;
+    margin-bottom: 75px;
+}
+
+.skillCard {
+    width: 33%;
+}
+
+.skillCard h3 {
     text-align: center;
 }
 
-.sideBar img {
-    margin-bottom: 50px;
+.skillCard p {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.skillCard img {
+    transform: scale(0.8, 0.8);
+    border: 3px solid black;
+    border-radius: 100%;
+    width: 100%;
+}
+
+.extraFlex {
+    display: flex;
+}
+
+.personal {
+    width: 50%;
+}
+
+.tools {
+    width: 50%;
     text-align: center;
+}
+
+.tools ul {
+    margin-bottom: 25px;
+}
+
+.tools li {
+    text-align: left !important;
+    font-weight: bold;
+    list-style-type: none;
+    padding-left: 37%;
+}
+
+
+#resume {
+    color: white;
+    font-weight: bold;
+    background-image: linear-gradient(#595959, #000000);
+    border: 1px solid black;
+    border-radius: 16px;
+    width: 160px;
+    height: 50px;
+}
+
+
+/* .onePage {
+    display: flex;
 }
 
 .sideBar ul {
@@ -39,13 +247,12 @@
 
 .sideBar ul li a {
     text-decoration: none;
-    font: normal normal 800 24px/39px Catamaran;
-    color: #000000;
+    color: white;
 }
 
 .aboutMe {
-    background-image: url("/UX_UI_HW_17/images/HeroBackgroundImg.jpg");
-    color:white;
+    background-color: white;
+    color:black;
 }
 
 .professionalMe {
@@ -104,7 +311,7 @@ footer ul li a {
     color: white;
     font-size: 20px;
     margin-left: 20px;
-}
+} */
 
 /* .navigation {
     display: inline-block;
