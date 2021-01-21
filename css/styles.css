@@ -125,7 +125,6 @@ h1 {
 }
 
 /* The Informed Traveler Specific Styling */
-
 #ift {
     background-color: #FFFEEA;
     border: 3px solid #F2BD1D;
@@ -134,13 +133,19 @@ h1 {
 #yellowFellow {
     width: 13rem;
     height: 4rem;
-    background-color: #FDF8A3;
+    background-image: linear-gradient(#FDF8A3, #fcf462);
     border: 2px solid #F2BD1D;
     border-radius: 16px;
     font-size: 1.125rem;
     font-weight: bold;
     color: black;
 }
+
+#yellowFellow:hover {
+    background-image: linear-gradient(#fcf462, #FDF8A3);
+    box-shadow: 1px 1px 1px #000000;
+}
+
 
 /* Edubeat Specific Styling */
 #eb {
@@ -151,7 +156,7 @@ h1 {
 #prettyPink {
     width: 13rem;
     height: 4rem;
-    background-color: #FF92B0;
+    background-image: linear-gradient(#f7b0c4, #f16d92);
     border: 2px solid #9E0067;
     border-radius: 16px;
     font-size: 1.125rem;
@@ -159,87 +164,17 @@ h1 {
     color: black;
 }
 
-/* My Work Styling
-.myWork {
-    background-color: #FAFAFA;
-    padding-top: 75px;
-    padding-bottom: 75px;
+#prettyPink:hover {
+    background-image: linear-gradient(#f16d92, #f7b0c4);
+    box-shadow: 1px 1px 1px #000000;
+    animation-name: move;
+    animation-duration: 0.7s;
 }
 
-.myWork h1 {
-    text-align: center;
-    margin-bottom: 70px;
+@keyframes move {
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(-5px);}
 }
-
-.workGrid {
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.card {
-    height: 50vh;
-}
-
-.card h2 {
-    margin-left: 60px;
-    margin-top: 36px;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.floatContainer {
-    display: flex;
-}
-
-.description {
-    width: 40%;
-    margin-left: 7%;
-}
-
-.card p {
-    margin-bottom: 30px;
-}
-
-.card img {
-    width: 42%;
-    transform: scale(0.3, 0.3);
-}
-
-#ift {
-    background-color: #FFFEEA;
-    border: 3px solid #F2BD1D;
-    border-radius: 10px;
-    margin-bottom: 100px;
-}
-
-#yellowFellow {
-    width: 200px;
-    height: 60px;
-    background-color: #FDF8A3;
-    border: 2px solid #F2BD1D;
-    border-radius: 16px;
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
-}
-
-#eb {
-    background-color: #FFE7ED;
-    border: 3px solid #9E0067;
-    border-radius: 10px;
-    margin-bottom: 100px;
-}
-
-#prettyPink {
-    width: 200px;
-    height: 60px;
-    background-color: #FF92B0;
-    border: 2px solid #9E0067;
-    border-radius: 16px;
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
-} */
 
 /* My Skills styling */
 .mySkills {
@@ -314,72 +249,12 @@ h1 {
     height: 50px;
 }
 
-
-/* .onePage {
-    display: flex;
+#resume:hover {
+    background-image: linear-gradient(#000000, #595959);
 }
 
-.sideBar ul {
-    list-style-type: none;
-    text-align: left;
-}
 
-.sideBar li {
-    margin-bottom: 50px;
-    margin-left: 25px;
-}
-
-.sideBar li:hover {
-    border-left: #F2BD1D 5px solid;
-    padding-left: 10px;
-    background-color: #f2bd1d56;
-}
-
-.sideBar ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-.aboutMe {
-    background-color: white;
-    color:black;
-}
-
-.professionalMe {
-    display: flex;
-}
-
-.professionalMe h1 {
-    padding-left: 30px;
-}
-
-.professionalMe p {
-    width: 600px;
-    margin-left: 60px;
-    line-height: 50px;
-}
-
-.professionalImg {
-    width: 200px;
-    margin-top: 50px;
-}
-
-.casualMe {
-    margin-left: 60px;
-    line-height: 50px;
-}
-
-button {
-    border-radius: 41px;
-    height: 90px;
-    width: 380px;
-    text-align: center;
-    font-family: 'Catamaran', sans-serif; 
-    font-size: 26px;
-    color: white;
-    background-image: linear-gradient(90deg, #E10595 0%, #F0BB1C 100%);
-}
-
+/*
 footer {
     background-color: black;
     display: flex;
@@ -403,29 +278,24 @@ footer ul li a {
     margin-left: 20px;
 } */
 
-/* .navigation {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.logo {
-    width: 23%;
-    padding: 1%;
-    text-align: center;
-}
-
-nav {
-    width: 73%;
-    padding: 1%;
-}
-
-ul {
-    width: 50%;
-    margin-left: auto;
-} */
-
-
 /* FOR REFERENCE ************************************************* 
 font-family: 'Catamaran', sans-serif; 
 font-family: 'Open Sans', sans-serif;
 */
+
+@media only screen and (max-width: 600px) {
+    .sidenav {
+        width: 100%;
+        height: 10%;
+        display: flex;
+    }
+
+    .sidenav img {
+        margin: 0 auto;
+    }
+
+    .sidenav ul {
+        display: none;
+    }
+
+}
