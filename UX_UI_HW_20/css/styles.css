@@ -141,6 +141,11 @@ h1 {
     color: black;
 }
 
+#yellowFellow a {
+    text-decoration: none;
+    color: black;
+}
+
 #yellowFellow:hover {
     background-image: linear-gradient(#fcf462, #FDF8A3);
     box-shadow: 1px 1px 1px #000000;
@@ -327,6 +332,18 @@ footer ul li a {
     color: white;
     font-size: 20px;
 } 
+
+/* Informed Traveler Case Study Page */
+
+.logo-case {
+    transform: scale(0.7, 0.7);
+}
+
+.intro-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 /* FOR REFERENCE ************************************************* 
 font-family: 'Catamaran', sans-serif; 
