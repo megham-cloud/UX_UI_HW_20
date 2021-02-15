@@ -50,6 +50,10 @@ h1 {
     font-family: 'Open Sans', sans-serif;
 }
 
+.nav {
+    padding-inline-left: 40px;   
+}    
+
 /* weird linking issues? */
 /* Hero space styling */
 .herospace {
