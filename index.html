@@ -1,206 +1,48 @@
-    <html>
+    <!DOCTYPE html>
 
-    <head>
-        <title>Megha Mahapatra - UX/UI Designer</title>
-        <script src="https://kit.fontawesome.com/27a2d694d4.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/UX_UI_HW_20/css/styles.css" type="text/css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src= "https://kit.fontawesome.com/27a2d694d4.js" crossorigin= "anonymous"></script>
 
-    <body>
-        <!-- Sidebar navigation -->
-        <div class="sidenav">
-            <img src="/UX_UI_HW_20/UX_UI_HW_20/images/Logo/Dark_Personal Logo – 1.png" alt="My personal logo">
-            <ul>
-                <li><a class="scroll" href="#about">About</a></li>
-                <li><a class="scroll" href="#myWork">Work</a></li>
-                <li><a class="scroll" href="#mySkills">Skills</a></li>
-                <li><a class="scroll" href="#contact">Contact</a></li>
-            </ul>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Page not found - Megha Mahapatra</title>
+    <link rel="stylesheet" href="/UX_UI_HW_20/css/newStyles.css" type="text/css">
+</head>
+
+<body>
+
+    <div class="container-fluid main page404">
+      
+        <div class="row text-center d-flex justify-content-center">
+            <img src="/UX_UI_HW_20/images/Logo/darkpersonallogo.svg" alt="My personal logo: a black capital M with a black heart on top" id="myLogo">
+            <h1 class="noSpace">I've relocated!</h1>
+            <p>I apologize for the inconvenience! You can find me here:</p>
+            <a href="https://megham-cloud.github.io/portfolio/" target="_blank">https://megham-cloud.github.io/portfolio/</a>
         </div>
 
+        <div class="row text-center">
+            <h4 class="noSpace2">For specific case studies:</h4>
+            <p><b>Mobile App Design: Edubeat</b></p>
+            <a href="https://megham-cloud.github.io/portfolio/edubeat.html" target="_blank">https://megham-cloud.github.io/portfolio/edubeat.html</a>
 
-        <!-- Main Content -->
-        <div class="main">
-            <!-- Hero Space with quick info about me -->
-            <div class="herospace" id="about" name="about">
-                <h1>Nice to meet you, I'm Megha!<img src="/UX_UI_HW_20/UX_UI_HW_20/images/TransparentMe.png"
-                        alt="Image of me smiling">
-                </h1>
-                <p>A UX designer obsessed with creating user friendly designs where logic and creativity meet. Always
-                    looking to
-                    step into another user's shoes.</p>
-            </div>
+            <p class="caseSpace404"><b>Mobile App Design: The Informed Traveler</b></p>
+            <a href="https://megham-cloud.github.io/portfolio/informedtraveler.html" target="_blank">https://megham-cloud.github.io/portfolio/informedtraveler.html</a>
 
-            <!-- My Work Section -->
-            <section class="myWork" id="myWork">
-                <h1>My Work</h1>
-                <!-- My Work Section Constructed using CSS Grid -->
-                <!-- I didn't quite use the CSS grid in the way that the directions wanted though... -->
-                <div class="workGrid">
-                    <!-- The Informed Traveler Card -->
-                    <div class="card" id="ift">
-                        <!-- Column for description -->
-                        <div class="description">
-                            <h2>Mobile App Design: <br> The Informed Traveler</h2>
-                            <p>A survey I conducted showed that 41.2% of travelers are dissatisfied with expensive
-                                tourist traps. I knew I had to design an app to fix this problem when competitor
-                                analysis showed that other apps were not scratching this itch.</p>
-                                <a href="ift.html"><button id="yellowFellow">See Case Study</button></a>
-                        </div>
-                        <!-- Column for images -->
-                        <div class="images">
-                            <img src="/UX_UI_HW_20/UX_UI_HW_20/images/IFT/Home Page - Explore – Activity-Location – 1.png"
-                                alt="The Informed Traveler View Activity Screen">
-                            <img src="/UX_UI_HW_20/UX_UI_HW_20/images/IFT/Framed Sign In.png"
-                                alt="The Informed Traveler Splash Screen">
-                            <img src="/UX_UI_HW_20/UX_UI_HW_20/images/IFT/View my reviews – 1.png"
-                                alt="The Informed Traveler Review Screen">
-                        </div>
-
-                    </div>
-
-                    <!-- Edubeat Card -->
-                    <div class="card" id="eb">
-
-                        <div class="description">
-                            <h2>Mobile App Design: Edubeat</h2>
-                            <p>Creating music to study can be a daunting task to do alone, according to 81% of students
-                                surveyed. Some fellow designers and I took matters into our own hands and designed a
-                                song
-                                making
-                                studying tool.</p>
-                            <a href="eb.html"><button id="prettyPink">See Case Study</button></a>
-                        </div>
-
-                        <div class="images">
-                            <img src="/UX_UI_HW_20/UX_UI_HW_20/images/EB/Home.png" alt="Edubeat Home Screen">
-                            <img src="/UX_UI_HW_20/UX_UI_HW_20/images/EB/Splash Screen.png" alt="Edubeat Splash Screen">
-                            <img src="/UX_UI_HW_20/UX_UI_HW_20/images/EB/Jingle Creation 14 - Stop recording.png"
-                                alt="Edubeat Recording Screen">
-                        </div>
-                    </div>
-                    
-                    <div class="card" id="ift">
-
-                        <div class="description">
-                            <h2>Responsive Website Redesign: Florida Department of Children and Families</h2>
-                            <p>Testing families revealed that finding a childcare website using the FDCF's webpage was difficult due to the complex navigation of the website. My team worked on creating a redesign for this website to help solve this issue.</p>
-                            <a href="fdcf.html"><button id="yellowFellow">See Case Study</button></a>
-                        </div>
-
-                        <div class="images">
-                            <img src="/UX_UI_HW_20/UX_UI_HW_20/images/EB/Home.png" alt="Edubeat Home Screen">
-                            <img src="/UX_UI_HW_20/UX_UI_HW_20/images/EB/Splash Screen.png" alt="Edubeat Splash Screen">
-                            <img src="/UX_UI_HW_20/UX_UI_HW_20/images/EB/Jingle Creation 14 - Stop recording.png"
-                                alt="Edubeat Recording Screen">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- My Skills Section -->
-            <section class="mySkills" id="mySkills">
-                <h1>My Skills</h1>
-                <!--  My UX Skills section coded using CSS flex -->
-                <div class="flexContainer">
-                    <div class="skillCard">
-                        <img src="/UX_UI_HW_20/UX_UI_HW_20/images/Circle/Circle_Per.png" alt="User Persona">
-                        <h3>User Research</h3>
-                        <p>I utilize user research in order to understand the users, what makes them tick, and what they
-                            enjoy.
-                            Ultimately, after conducting user interviews and surveys and analyzing the results through
-                            means
-                            such as affinity diagrams, I create a user persona to really empathize with the users and
-                            start
-                            to
-                            define our problem.</p>
-                    </div>
-                    <div class="skillCard">
-                        <img src="/UX_UI_HW_20/UX_UI_HW_20/images/Circle/Circle_Style.png" alt="Style Guide">
-                        <h3>User Interface Design</h3>
-                        <p>I use my knowledge of color theory and other laws like Gestalt's principles to determine a
-                            design
-                            that not only looks visually pleasing, but has real intent and meaning behind the visual
-                            direction
-                            taken. I develop and use a style guide or enhance a preexisting one to determine the look of
-                            every
-                            design project.</p>
-                    </div>
-                    <div class="skillCard">
-                        <img src="/UX_UI_HW_20/UX_UI_HW_20/images/Circle/Circle_Code.png" alt="User Persona">
-                        <h3>Web Development</h3>
-                        <p>Through my knowledge of HTML, CSS, JavaScript, Jquery, and Bootstrap, I can not only work on
-                            the
-                            front-end development of websites (like this very website), but I can also understand and
-                            communicate with developers who I need to work with when I am taking a UX/UI designer role.
-                        </p>
-                    </div>
-                </div>
-                <div class="extraFlex">
-                    <div class="personal">
-                        <h3>A Little More About Me</h3>
-                        <p>When I am not sharpening my skills, you can catch me gawking at the stars while strolling
-                            around
-                            the
-                            neighborhood in the early evening. I spend countless hours reading fantasy novels (I am
-                            currently
-                            losing
-                            my mind over Brandon Sanderson's novels, and I love it), and practicing the keyboard.
-                        </p>
-                    </div>
-                    <div class="tools">
-                        <h3>Tools I Know</h3>
-                        <ul>
-                            <li>Miro</li>
-                            <li>Figma</li>
-                            <li>inVision</li>
-                            <li>Adobe XD</li>
-                            <li>Google Drive</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <button id="resume">View Resume</button>
-            </section>
-
-            <!-- Contact Section -->
-            <section class="contact" id="contact">
-                <h1>Contact Me</h1>
-                <h3 id="thankYou">Thank you for your time!</h3>
-                <p>I'd love to answer any questions you have, please feel free to reach out to me!</p>
-
-                <div class="contactInfo">
-                    <div class="email">
-                        <h3>Email Me</h3>
-                        <i class="fas fa-envelope"></i>
-                        <br>
-                        <h3><a href="mailto:meg.maha@gmail.com">meg.maha@gmail.com</a></h3>
-                    </div>
-
-                    <div class="phone">
-                        <h3>Call Me</h3>
-                        <i class="fas fa-phone-alt"></i>
-                        <h3>863-701-6426</h3>
-                    </div>
-                </div>
-            </section>
-
+            <p class="caseSpace404"><b>Website Redesign: Child Care (Florida Department of Children and Families)</b></p>
+            <a href="https://megham-cloud.github.io/portfolio/childcare.html" target="_blank">https://megham-cloud.github.io/portfolio/childcare.html</a>
         </div>
 
+    </div>
 
-    <footer>
-        <div class="copyright">
-            <p><i class="far fa-copyright"></i>2020 designed and coded by Megha Mahapatra</p>
-        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
-        <div class="socials">
-            <ul>
-                <li><a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://github.io"><i class="fab fa-github-square"></i></a></li>
-            </ul>
-        </div>
-    </footer>
+</body>
 
-    </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>
