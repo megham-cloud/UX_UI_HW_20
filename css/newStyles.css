@@ -17,13 +17,13 @@ p {
 
 div.main {
     /* margin-left: 200px; */
-    margin: 80px 0px 0px 0px;
+    margin: 75px 0px 0px 0px;
     padding: 0px;
 }
 
 /* 404 page */
 .page404 h1 {
-    margin-top: 75px;    
+    margin-top: 25px;    
 }
 
 .page404 h4 {
